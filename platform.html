@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Your description goes here" />
+  <meta name="keywords" content="your,keywords,goes,here" />
+  <meta name="author" content="Amdouni" />
+  <link rel="stylesheet" type="text/css" href="andreas00.css" media="screen,projection" />
+  <title>Platform</title>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">
+	 <font color=#FAFAFA >	<h1></h1>
+	<p><b><h2></h2></b></p>
+	</font> 
+	</div>
+
+	<div id="leftside">
+		<h2 class="hide">Sample menu:</h2>
+		<ul class="avmenu">
+                       <li><a href="index.html">Home</a></li>
+<li><a href="odysse.html">Odysse protocol</a></li>
+<li><a class="current" href="platform.html">Platform</a></li>
+<li><a href="overview.html">Tilas</a></li>
+<li><a href="publications.html">Publications</a></li>
+
+                         <br>
+			<!--
+			<li>Menu1</li>
+			<li><a href="Menu2">Menu2</a></li>
+			-->
+		</ul>
+
+
+
+		
+	</div>
+
+	<div id="extras">
+		
+	<!-- img src="img/logo-inria.png" height="60" width="200" class="center" alt="Example content image" / -->
+		<h2>Related links:</h2>
+		<ul>
+			<li><a href="http://www.en.u-pec.fr/">UPEC</a></li>
+			<li><a href="http://www.tilas.eu/">TILAS project</a></li>
+			<li><a href="https://www.iot-lab.info">FIT IoT-LAB platform</a></li>
+			
+		</ul>
+
+		<div class="announce">
+			<h2>News:</h2>
+			<p><strong>ANNOUNCE:</strong><br />
+			<a href="https://www.celticplus.eu/event/celtic-plus-event/"> 
+			UPEC has participated in the Celtic-Plus Event 2015, 27-28 April in Vienna.
+			</a>
+			<br clear="all">
+			 Booth <a href="https://www.celticplus.eu/wp-content/uploads/2015/05/Exhibition-Viennea-2015-64-Medium.jpg"> photo</a>		
+			</p>
+			
+			<p><strong>December 2015</strong><br />
+			UPEC will participate in the 
+			final review of TILAS project - Santander, Spain, December 2015.</a> 
+			<p> 
+			
+			<!-- <p class="textright"><a href="https://sites.google.com/site/">Meeting&raquo;</a></p> -->
+		</div>
+	</div>
+
+
+<!-- ================================================== -->
+
+    <div id="content" style="text-align: justify;">
+
+    
+
+<h1>Platform</h1>
+
+The deployed platform mainly includes the following hardware:
+<ol>
+	<li><a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Atmega2560</a> 
+	devices</li>
+	<img src="../Figures/arduino.jpg" width="225" height="225" alt="" align="center">	
+	<li>These devices use IEE802.15.4 communications based on  
+	<a href="http://www.digi.com/fr/products/wireless/point-multipoint/xbee-series1-module">
+	XBee module</a>.</li>
+	<img src="../Figures/camera.jpg" width="230" height="219" alt="">
+
+	<li>The multimedia devices are equipped with
+    <a href="https://learn.adafruit.com/ttl-serial-camera/overview"> 
+    Serial Jpeg camera</a>.
+    <img src="../Figures/xbee.jpg" width="180" height="180" alt="">
+
+</li>
+ <br clear="all">
+ <p>
+ 
+ <h1>Integration in FIT IoT-LAB</h1>
+ 
+The prototype is integrated in the experimental platform 
+ <a href="https://www.iot-lab.info/">FIT IoT-LAB
+platform</a>, 
+in particular in 
+<a href="https://www.iot-lab.info/deployment/rocquencourt/">
+Rocquencourt platform</a>
+</p>
+<p>
+<h2>FIT IoT-LAB platform</h2>
+FIT IoT-LAB test bed provides a very large scale infrastructure facility suitable for 
+testing small wireless sensor devices and heterogeneous communicating objects via
+Internet. 
+This infrastructure consists in six large-scale Internet of Things test beds in
+France with over 2700 wireless sensor nodes in a variety of topologies and
+environments, 
+and both fixed and mobile nodes. It is open for scientific and
+experimental usage.
+The platform can be accessed through a web portal or using provided Linux commands
+(CLI tools). In addition, the platform offers a hosted environment on SSH front-ends,
+featuring pre-installed CLI Tools, target architectures cross-compiler toolchains,
+experiments results, and access to devices serial ports.
+</p>
+
+<p>
+The advantages of the integration of the TILAS platform in FIT IoT-LAB Rocquencourt
+platform are multiple:
+
+<ol>
+	<li>For development purposes, this integration makes easier the development task
+especially for large scale testbed. For instance, firmware update of IoT-LAB
+nodes is done remotely either by a simple click in the portal web or via SSH
+frontend using the developed software tools. Adapting these features to TILAS
+nodes avoids us to flash nodes one by one manually.</li>
+	<li>The multi-hop scenarios setting is a not a trivial task in practice and it is a huge
+time consuming in the development process. Rocquencourt platform constitutes
+a multi-hop network. Hence, getting the multi-hop scenario is immediate once
+the TILAS nodes are connected to IoT-LAB nodes.</li>
+	<li>TILAS nodes could be open for all users like IoT-LAB nodes. This enables the
+knowledge sharing, and platforms of TILAS project with users which gives this
+project a very high visibility.</li>
+</ol>
+</p>
+
+<h2>Plan of the realised testbed</h2>
+<p>
+Here is the plan of the deployed Arduino nodes.
+Red nodes are nodes with cameras, while green nodes are nodes without cameras.
+</p>
+<!-- 
+
+<img src="../Figures/platform-with-arduino.svg" width="750" alt="" align="center"></del>
+-->
+<img src="../Figures/platform-only-arduino.svg" width="735" alt="" align="center">	
+
+
+<br clear="all">
+<h2>Some photos of the integration</h2>
+<br>
+
+<img src="../Figures/DSC_0462.JPG" width="340" height="245" alt="" align="center">	
+
+<img src="../Figures/DSC_0461.JPG" width="340" height="245" alt="" align="center">	
+
+<img src="../Figures/DSC_0467.JPG" width="340" height="245" alt="" align="center">	
+
+<img src="../Figures/DSC_0459.JPG" width="340" height="245" alt="" align="center">
+
+
+
+
+
+    </div>
+
+<!-- ================================================== -->
+
+	<div id="footer">
+		<p><span>&copy; 2015 <a href="#">Partners of project</a></span><br />
+		<!-- img src="img/logo-inria.png" height="40" width="100" class="center" alt="Example content image" / -->
+<span style="font-size: 10%;"> <a href="http://andreasviklund.com/templates/" title="Original CSS template design">Original design</a> by <a href="http://andreasviklund.com/" title="Andreas Viklund">Andreas Viklund</a> | Modified by <a href="http://Jasoncole.ca">Jason Cole</a> | Modified by <a href="http://fr.viadeo.com/fr/profile/hana.baccouch">Hana Baccouch</a> and C. Adjih </span></p>
+	</div>
+
+</div>
+</body>
+</html>
